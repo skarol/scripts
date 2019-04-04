@@ -10,4 +10,7 @@ rm -rf ~/Library/Developer/Xcode/Archives/*
 echo "cleaning cache"
 rm -rf ~/Library/Caches/com.apple.dt.Xcode
 
+echo "delete unavilable simulators"
+xcrun simctl delete unavailable
+
 echo "finish successfully"
